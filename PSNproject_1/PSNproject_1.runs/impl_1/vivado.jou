@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue May 30 22:07:04 2023
+# Process ID: 13344
+# Current directory: C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.runs/impl_1
+# Command line: vivado.exe -log Nexys4.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Nexys4.tcl -notrace
+# Log file: C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.runs/impl_1/Nexys4.vdi
+# Journal file: C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.runs/impl_1\vivado.jou
+# Running On: LAPTOP-KAR3DONF, OS: Windows, CPU Frequency: 2096 MHz, CPU Physical cores: 8, Host memory: 6378 MB
+#-----------------------------------------------------------
+source Nexys4.tcl -notrace

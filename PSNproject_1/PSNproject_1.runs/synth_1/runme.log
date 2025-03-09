@@ -1,0 +1,371 @@
+
+*** Running vivado
+    with args -log Nexys4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nexys4.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source Nexys4.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.172 ; gain = 0.000
+Command: read_checkpoint -auto_incremental -incremental C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/utils_1/imports/synth_1/Nexys4.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/utils_1/imports/synth_1/Nexys4.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Nexys4 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16376
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1285.172 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Nexys4' [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/Nexys4.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'mpg' [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/imports/Detrimis/mpg.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'mpg' (0#1) [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/imports/Detrimis/mpg.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'SSDv1' [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/imports/Detrimis/SSD/SSDv1.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'SSDv1' (0#1) [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/imports/Detrimis/SSD/SSDv1.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'Divizor_frecventa' [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/Divizor_frecventa.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Divizor_frecventa' (0#1) [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/Divizor_frecventa.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:50]
+WARNING: [Synth 8-614] signal 'combinatie_led1' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'scor' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led2' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led3' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led4' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led5' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led6' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led7' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led8' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led9' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led10' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led11' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led12' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led13' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led14' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led15' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led16' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led17' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led18' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led19' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led20' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led21' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led22' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led23' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led24' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led25' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led26' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led27' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led28' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led29' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'combinatie_led30' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:101]
+WARNING: [Synth 8-614] signal 'scorafis' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led1' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led2' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led3' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led4' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led5' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led6' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led7' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led8' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led9' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led10' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led11' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led12' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led13' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led14' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led15' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led16' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led17' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led18' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led19' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led20' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led21' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led22' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led23' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led24' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led25' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led26' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led27' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led28' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led29' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+WARNING: [Synth 8-614] signal 'combinatie_led30' is read in the process but is not in the sensitivity list [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:441]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (0#1) [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Nexys4' (0#1) [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/Nexys4.vhd:47]
+WARNING: [Synth 8-7129] Port btn[3] in module Nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module Nexys4 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1285.172 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1285.172 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1285.172 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1285.172 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/constrs_1/imports/Configuratie/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/constrs_1/imports/Configuratie/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/constrs_1/imports/Configuratie/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nexys4_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Nexys4_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1331.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1331.328 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            power_on_off | 000000000000000000000000000000001 |                           000000
+       waiting_for_start | 000000000000000000000000000000010 |                           000001
+               wam_game1 | 000000000000000000000000000000100 |                           000010
+               wam_game2 | 000000000000000000000000000001000 |                           000011
+               wam_game3 | 000000000000000000000000000010000 |                           000100
+               wam_game4 | 000000000000000000000000000100000 |                           000101
+               wam_game5 | 000000000000000000000000001000000 |                           000110
+               wam_game6 | 000000000000000000000000010000000 |                           000111
+               wam_game7 | 000000000000000000000000100000000 |                           001000
+               wam_game8 | 000000000000000000000001000000000 |                           001001
+               wam_game9 | 000000000000000000000010000000000 |                           001010
+              wam_game10 | 000000000000000000000100000000000 |                           001011
+              wam_game11 | 000000000000000000001000000000000 |                           001100
+              wam_game12 | 000000000000000000010000000000000 |                           001101
+              wam_game13 | 000000000000000000100000000000000 |                           001110
+              wam_game14 | 000000000000000001000000000000000 |                           001111
+              wam_game15 | 000000000000000010000000000000000 |                           010000
+              wam_game16 | 000000000000000100000000000000000 |                           010001
+              wam_game17 | 000000000000001000000000000000000 |                           010010
+              wam_game18 | 000000000000010000000000000000000 |                           010011
+              wam_game19 | 000000000000100000000000000000000 |                           010100
+              wam_game20 | 000000000001000000000000000000000 |                           010101
+              wam_game21 | 000000000010000000000000000000000 |                           010110
+              wam_game22 | 000000000100000000000000000000000 |                           010111
+              wam_game23 | 000000001000000000000000000000000 |                           011000
+              wam_game24 | 000000010000000000000000000000000 |                           011001
+              wam_game25 | 000000100000000000000000000000000 |                           011010
+              wam_game26 | 000001000000000000000000000000000 |                           011011
+              wam_game27 | 000010000000000000000000000000000 |                           011100
+              wam_game28 | 000100000000000000000000000000000 |                           011101
+              wam_game29 | 001000000000000000000000000000000 |                           011110
+              wam_game30 | 010000000000000000000000000000000 |                           011111
+                  iSTATE | 100000000000000000000000000000000 |                           100000
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'scor_reg' [C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.srcs/sources_1/new/FSM.vhd:115]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	  33 Input   33 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 32    
+	  33 Input   16 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	  33 Input    6 Bit        Muxes := 1     
+	  33 Input    1 Bit        Muxes := 1     
+	  31 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port btn[3] in module Nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module Nexys4 is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (maincomp/FSM_onehot_current_state_reg[32]) is unused and will be removed from module Nexys4.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+--------------------+---------------+----------------+
+|Module Name | RTL Object         | Depth x Width | Implemented As | 
++------------+--------------------+---------------+----------------+
+|FSM         | scorafis           | 32x6          | LUT            | 
+|Nexys4      | seconds_conversion | 64x7          | LUT            | 
+|Nexys4      | maincomp/scorafis  | 32x6          | LUT            | 
+|Nexys4      | seconds_conversion | 64x7          | LUT            | 
++------------+--------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    21|
+|3     |LUT1   |     8|
+|4     |LUT2   |    66|
+|5     |LUT3   |    17|
+|6     |LUT4   |    48|
+|7     |LUT5   |    34|
+|8     |LUT6   |    69|
+|9     |FDCE   |    66|
+|10    |FDPE   |     5|
+|11    |FDRE   |    58|
+|12    |LD     |     5|
+|13    |IBUF   |    20|
+|14    |OBUF   |    31|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.328 ; gain = 46.156
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:56 . Memory (MB): peak = 1331.328 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.328 ; gain = 46.156
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1331.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1331.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  LD => LDCE: 5 instances
+
+Synth Design complete, checksum: c4f0246d
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:01:10 . Memory (MB): peak = 1331.328 ; gain = 46.156
+INFO: [Common 17-1381] The checkpoint 'C:/Users/colde/OneDrive/Desktop/UTCN/ProiectPSN/PSNproject_1/PSNproject_1.runs/synth_1/Nexys4.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Nexys4_utilization_synth.rpt -pb Nexys4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 30 22:06:53 2023...
